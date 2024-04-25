@@ -1,0 +1,43 @@
+Lab 2
+
+1.
+Actori: -Profesor
+	-Secretara
+	-Student -> Student cu taxa
+
+Relații:-Profesor:	+conectare sistem
+		 	+integistreaza note -> acestea sunt salvate pe disc,
+			+modificare nota -> nota noua se salvează pe disc
+			+distribuie rapoarte cu note 
+	-Profesor, Secretara, Student :
+			+vizualizează notele
+	-Secretara:	+generează rapoarte cu note
+			+conecrare sistem
+	-Student: 	+conectare sistem
+
+
+UseCase:-integistreaza note
+	-modificare nota
+	-salvare pe disc
+	-vizualizează notele
+	-conectare la site -> dacă FAIL trebuie re-autentificare
+	-autentificare cu email și parola
+
+*Exista actori care sunt specializari ale altor actori mai generali? Daca
+da, identificati care este actorul general si care este actorul specializat. Ce tip de relatie trebuie reprezentata intre actorul general si
+specializarea sa?
+
+r: Studentul la taxa este un student care are toate proprietățile studentului, dar trebuie sa și plătească taxa. La un nivel mai mare și Profesorul și Secretare și Studentul sunt Useri(persoane care se pot conecta)
+
+*Exista cazuri de utilizare folosite intotdeauna de alte cazuri de utilizare? Daca da, ce tip de relatie exista intre acestea? Identificati cazurile de utilizare folosite intotdeuna si cazurile de utilizare ce le folosesc.
+
+r: Da, salvarea pe disc este un caz de utilizare folosit tot timpul de alt caz de utilizare ca de exemplu înregistrarea notelor sau modificarea notelor(după acești pași urmează salvarea pe disc)
+
+*Exista cazuri de utilizare folosite uneori de catre un alt caz de utilizare? Daca da, ce tip de relatie exista intre acestea? Identificati cazurile de utilizare folosite uneori si cazurile de utilizare ce le folosesc.
+
+r: Exista, acesta fiind momentel în care încerci sa te conectezi la site, dacă FAIL-uie, atunci trebuie alta acțiune și anume re-autentificarea
+
+
+
+
+	

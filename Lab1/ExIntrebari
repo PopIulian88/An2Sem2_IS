@@ -1,0 +1,49 @@
+Ce este UML?
++ UML permite prezentarea aspectelor
+variate ale unui sistem software (cerințele
+funcționale și nefuncționale, structurile de
+date, fluxurile de date și fluxurile de
+informații) într-un cadru unic, utilizând
+concepte orientate pe obiecte.
+
+Ce sunt modelele si care este utilitatea lor?
++ Modele sunt moduri de a a reprezenta structura unui sistem si putem
+arata ce se intampla in timpul executiei. Acese modele sunt representate
+prin diagrame, care in 75% din timp sunt in forma de clase, si in 50% 
+sun diagrame de utilizare si comunicare.
+
+Ce tipuri de diagrame sunt prezentate ˆın [1] – Capitolul 2? Care sunt
+asem ̆anarile s, i deosebirile ˆıntre acestea? Caracterizat, i succint fiecare
+diagrama prezentat ̆a ˆın
+
+CLASS DIAGRAM
+ -Object Diagram -> O diagrama care specifica clasele si legaturile dintre ele
+ -Package Diagram -> Grupeaza diagramele in functie de puterea lor
+		(cele mai mici fiind ma inauntru)
+ -Component Diagram -> exte penturu component-oriented softwer development
+			fiecare element fiind o componetna independenta
+			care executa un seviciu. Functioneaza ca un 
+			Black box, doar scrii numele care reprezinta 
+			ce face componenta, fara detalii.
+ -Composition Structure Diagram -> Reprezinta relatia de network
+ -Diployment Diagram -> diagrama pentru hardware
+ -Profile Diagram -> relatii cu profile. Adica clasele au tag-uri
+			precum 'metaclass', 'stereotype'
+
+BEHAVIOR DIAGRAMS
+ -Use Case Diagram -> o diagrama care prezinta cum funtioneaza aplicatia
+			incepand de la user si cum anume pote apasa
+			pe toate butoanele pentru a folosi aplicatia
+ -State Machine Diagram -> Obiectele trec prin mai multe stari, iar
+			aceasta diagrama arata ce se intampla cu 
+			componentele la fiecare stare(Ex ce se intampla
+			cand userul este logat sau nu)
+ -Activity Diagram -> pot modele orice tip de proces(business sau software)
+ -Sequence Diagram -> Apara interactiunea dintre obiecte pentru un anumit task
+ -Communication Diagram -> Similar cu Sequence Diagram, dar aici focusul este pe
+			relatile dintre clase
+ -Timing Diagram -> Arata schimbarile care se realizeaza in functie de o perioada
+			de timp
+ -Interaction Overview Diagram -> conectiunile dintre diferite interactiuni
+
+
